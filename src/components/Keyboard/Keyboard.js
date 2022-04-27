@@ -3,10 +3,11 @@ import keysList from "../../keysList";
 
 const Keyboard = () => {
   return (
-    <div class="keyboard-container">
-      <ol class="keyboard">
-        {keysList.map((key) => (
+    <div className="keyboard-container">
+      <ol className="keyboard">
+        {keysList.map((key, index) => (
           <Key
+            key={index}
             text={key}
             action={() => {}}
             keyClass={typeof key === "number" ? "key" : "key big"}

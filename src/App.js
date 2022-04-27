@@ -1,13 +1,14 @@
+import Display from "./components/Display/Display";
 import Keyboard from "./components/Keyboard/Keyboard";
 
 function App() {
   return (
     <div className="container">
-      <span className="message">Calling...</span>
+      <Display messageClass={"message"} textToShow={"Calling..."} />
       <main className="phone">
         <Keyboard />
         <div className="actions">
-          <span className="number">667359961</span>
+          <Display messageClass={"number"} textToShow={"123423434"} />
 
           <a href="?" className="call">
             Call
