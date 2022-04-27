@@ -1,5 +1,5 @@
-const Info = ({ classToShow, Text }) => {
-  <span class={classToShow}>{Text}</span>;
+const Info = ({ classToShow, text }) => {
+  return <span className={classToShow}>{text}</span>;
 };
 
 export default Info;
